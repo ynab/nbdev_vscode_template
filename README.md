@@ -43,16 +43,13 @@ run `nbdev_build_lib`.
 
 1.  To see how that works, open `00_core.ipynb`.
 2.  run `nbdev_build_lib` to convert it to a .py file.
-3.  Open the `nbdev_in_vscode_template/core.py` file that was generated.
-4.  Put your cursor in the
-    [`say_hello`](https://ynab.github.io/nbdev_in_vscode_template/core.html#say_hello)
-    function and press F12 to jump to the definition of that function in
-    your 00_core.ipynb file. (This is feature of the [nbdev-vscode
+3.  Open the `nbdev_vscode_template/core.py` file that was generated.
+4.  Put your cursor in the `say_hello` function and press F12 to jump to
+    the definition of that function in your 00_core.ipynb file. (This is
+    feature of the [nbdev-vscode
     extension](https://github.com/fastai/nbdev-vscode).)
-5.  Put your cursor in the
-    [`add_one`](https://ynab.github.io/nbdev_in_vscode_template/core.html#add_one)
-    function in the notebook and hit `F12` and see it jump to your
-    function definition in the .py file.
+5.  Put your cursor in the `add_one` function in the notebook and hit
+    `F12` and see it jump to your function definition in the .py file.
 
 ## Committing changes to git
 
