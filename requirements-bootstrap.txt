@@ -1,0 +1,3 @@
+# I'm not sure yet how requirements.txt works with nbdev
+nbdev
+pre-commit

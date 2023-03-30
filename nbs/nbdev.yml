@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "nbdev_in_vscode_template"
+  site-url: "https://ynab.github.io/nbdev_in_vscode_template"
+  description: "nbdev template that makes it a bit easier to get started with nbdev in VSCode"
+  repo-branch: main
+  repo-url: "https://github.com/ynab/nbdev_in_vscode_template"
