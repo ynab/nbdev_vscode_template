@@ -39,9 +39,9 @@ hooks. You will be prompted for your sudo password because it installs
 ### Editing the libraries:
 
 The other notebooks automatically get converted to .py files when you
-run `nbdev_build_lib`. To see how that works:
+run `nbdev_build_lib`.
 
-1.  Open `00_core.ipynb`.
+1.  To see how that works, open `00_core.ipynb`.
 2.  run `nbdev_build_lib` to convert it to a .py file.
 3.  Open the `nbdev_in_vscode_template/core.py` file that was generated.
 4.  Put your cursor in the
