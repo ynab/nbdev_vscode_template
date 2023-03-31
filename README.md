@@ -39,10 +39,10 @@ hooks. You will be prompted for your sudo password because it installs
 ### Editing the libraries:
 
 The other notebooks automatically get converted to .py files when you
-run `nbdev_build_lib`.
+run `nbdev_export`.
 
 1.  To see how that works, open `00_core.ipynb`.
-2.  run `nbdev_build_lib` to convert it to a .py file.
+2.  run `nbdev_export` to convert your notebooks into .py modules.
 3.  Open the `nbdev_vscode_template/core.py` file that was generated.
 4.  Put your cursor in the `say_hello` function and press F12 to jump to
     the definition of that function in your 00_core.ipynb file. (This is
