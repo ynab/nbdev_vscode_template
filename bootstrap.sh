@@ -33,5 +33,5 @@ fi
 echo "Installing this package in editable mode. You can now import it from other python code."
 test -f setup.py && pip install -e ".[dev]"
 
-echo "nbdev and related stuff has been installed. To get started, run: `code .` and look at index.ipynb"
+echo "nbdev and related stuff has been installed. To get started, run: 'code .' and look at index.ipynb"
 
