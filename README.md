@@ -13,9 +13,11 @@ Once cloning it locally, run:
     $ ./bootstrap.sh
 ```
 
-This installs requirements, a VSCode extension, and git pre-commit
-hooks. You will be prompted for your sudo password because it installs
-[Quarto](https://quarto.org), which apparently needs root access.
+This installs requirements, the [semi-official, but experimental nbdev
+VSCode extension](https://github.com/fastai/nbdev-vscode), and [nbdev
+git pre-commit hooks](https://nbdev.fast.ai/tutorials/pre_commit.html).
+You will be prompted for your sudo password because it installs
+[Quarto](https://quarto.org), which needs root access by default.
 ¯\\*(ツ)*/¯
 
 # Usage
@@ -39,10 +41,10 @@ hooks. You will be prompted for your sudo password because it installs
 ### Editing the libraries:
 
 The other notebooks automatically get converted to .py files when you
-run `nbdev_export`.
+run `nbdev_build_lib`.
 
 1.  To see how that works, open `00_core.ipynb`.
-2.  run `nbdev_export` to convert your notebooks into .py modules.
+2.  run `nbdev_build_lib` to convert it to a .py file.
 3.  Open the `nbdev_vscode_template/core.py` file that was generated.
 4.  Put your cursor in the `say_hello` function and press F12 to jump to
     the definition of that function in your 00_core.ipynb file. (This is
@@ -91,12 +93,14 @@ tutorial](https://nbdev.fast.ai/tutorials/tutorial.html).
 # Github Actions
 
 When you push changes to your github repo, you’ll see three actions run.
-(These actions are defined inside of `.github/workflows`) 1. `test`
-(this is the main CI step that runs each of your notebooks. A test is
-just a cell executing without an exception.) 2. `Deploy to Github Pages`
-(builds your Github pages to the `gh-pages` branch.) 3.
-`pages-build-deployment` (Automatically run when your gh-pages branch
-updates, to deploy your built pages to your site. )
+(These actions are defined inside of `.github/workflows`)
+
+1.  `test` (this is the main CI step that runs each of your notebooks. A
+    test is just a cell executing without an exception.)
+2.  `Deploy to Github Pages` (builds your Github pages to the `gh-pages`
+    branch.)
+3.  `pages-build-deployment` (Automatically run when your gh-pages
+    branch updates, to deploy your built pages to your site. )
 
 If you want to see your Github pages hosted publicly, you’ll want to
 [enable Github Pages in your repo
