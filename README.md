@@ -88,6 +88,20 @@ pre_commit](https://nbdev.fast.ai/tutorials/pre_commit.html)
 For more on nbdev usage, follow the [nbdev
 tutorial](https://nbdev.fast.ai/tutorials/tutorial.html).
 
+# Github Actions
+
+When you push changes to your github repo, you’ll see three actions run.
+(These actions are defined inside of `.github/workflows`) 1. `test`
+(this is the main CI step that runs each of your notebooks. A test is
+just a cell executing without an exception.) 2. `Deploy to Github Pages`
+(builds your Github pages to the `gh-pages` branch.) 3.
+`pages-build-deployment` (Automatically run when your gh-pages branch
+updates, to deploy your built pages to your site. )
+
+If you want to see your Github pages hosted publicly, you’ll want to
+[enable Github Pages in your repo
+settings](https://nbdev.fast.ai/tutorials/tutorial.html#check-out-your-docs).
+
 ## Notebooks all the way down…
 
 This README, just like everything else in nbdev, is authored in a
